@@ -1,0 +1,27 @@
+﻿@page
+@model Piskvorky.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piškvorky</title>
+    <meta charset="utf-8" />
+    <style>
+        #forum{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="forum">
+        <form method="post">
+            <label asp-for="_Input.Text"></label>
+            <input asp-for="_Input.Text" />
+            <button type="submit">Pojmenovat se</button>
+        </form>
+    </section>
+</body>
+</html>
