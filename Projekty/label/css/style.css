@@ -81,6 +81,7 @@ body {
   -moz-animation: psychedelic linear 10s infinite;
   -o-animation: psychedelic linear 10s infinite;
   animation: psychedelic linear 10s infinite;
+  cursor: url('../img/mys.cur'), auto;
 }
 @-webkit-keyframes psychedelic {
   0% {
@@ -113,6 +114,10 @@ body {
   display: block;
   width: 220px;
   height: 100px;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(../img/ramek.png) 30 round;
+  border-radius: 30px;
 }
 
 .obal input{
@@ -133,7 +138,9 @@ body {
   transition: transform 1s ease
 }
 .hippie-button:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(.7);
+  transform-origin: center;
+  cursor: url('../img/pointer.cur'), pointer;
 }
 
 label {
